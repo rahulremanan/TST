@@ -1,0 +1,479 @@
+[1] 15
+[1] "Age by gender"
+  Gender        x
+1      0 56.26087
+2      1 57.86667
+  Gender         x
+1      0 11.757617
+2      1  7.691165
+
+	Welch Two Sample t-test
+
+data:  new.data$V1 by new.data$V22
+t = -0.71979, df = 73.994, p-value = 0.4739
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -6.051029  2.839435
+sample estimates:
+mean in group 0 mean in group 1 
+       56.26087        57.86667 
+
+[1] "Disease duration by gender"
+  Gender        x
+1      0 2.521739
+2      1 3.800000
+  Gender        x
+1      0 2.664492
+2      1 5.026825
+
+	Welch Two Sample t-test
+
+data:  new.data$V21 by new.data$V22
+t = -1.2804, df = 39.741, p-value = 0.2078
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.2963433  0.7398216
+sample estimates:
+mean in group 0 mean in group 1 
+       2.521739        3.800000 
+
+[1] "Disease severity (ALSFRSr) by gender"
+  Gender        x
+1      0 41.18182
+2      1 37.33333
+  Gender        x
+1      0 5.384183
+2      1 6.722753
+
+	Welch Two Sample t-test
+
+data:  new.data$ALSFRSr by new.data$V22
+t = 2.6153, df = 53.067, p-value = 0.01158
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.8970811 6.7998886
+sample estimates:
+mean in group 0 mean in group 1 
+       41.18182        37.33333 
+
+[1] "Disease severity (AALS) by gender"
+  Gender        x
+1      0 49.86364
+2      1 55.26667
+  Gender        x
+1      0 14.94267
+2      1 19.71685
+
+	Welch Two Sample t-test
+
+data:  new.data$AALS by new.data$V22
+t = -1.2723, df = 50.896, p-value = 0.209
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -13.928733   3.122672
+sample estimates:
+mean in group 0 mean in group 1 
+       49.86364        55.26667 
+
+[1] "MQoL-SIS by gender"
+  Gender        x
+1      0 7.272727
+2      1 6.866667
+  Gender        x
+1      0 1.933350
+2      1 2.596195
+
+	Welch Two Sample t-test
+
+data:  new.data$V3 by new.data$V22
+t = 0.72975, df = 50.233, p-value = 0.4689
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.7114534  1.5235746
+sample estimates:
+mean in group 0 mean in group 1 
+       7.272727        6.866667 
+
+[1] "VAS by gender"
+  Gender   x
+1      0 4.0
+2      1 3.8
+  Gender        x
+1      0 2.828427
+2      1 3.021760
+
+	Welch Two Sample t-test
+
+data:  new.data$V23 by new.data$V22
+t = 0.28919, df = 59.161, p-value = 0.7734
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1.183767  1.583767
+sample estimates:
+mean in group 0 mean in group 1 
+            4.0             3.8 
+
+[1] "Simple linear regression diagnostics for rAmp"
+[1] "rAmp and blocak-and-board performance"
+
+Call:
+lm(formula = new.data$V4 ~ new.data$V18)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-67.470 -16.938  -0.287  20.732  74.853 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -13.3997     9.7111  -1.380    0.172    
+new.data$V18   1.3943     0.1759   7.926 2.11e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 27.75 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.466,	Adjusted R-squared:  0.4585 
+F-statistic: 62.82 on 1 and 72 DF,  p-value: 2.107e-11
+
+[1] "rAmp and Purdue peg board test"
+
+Call:
+lm(formula = new.data$V4 ~ new.data$V17)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-74.061 -21.127   3.381  22.410  72.857 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   11.1431     8.6600   1.287    0.202    
+new.data$V17   2.5167     0.4128   6.096 4.88e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 30.84 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.3404,	Adjusted R-squared:  0.3313 
+F-statistic: 37.16 on 1 and 72 DF,  p-value: 4.877e-08
+
+[1] "rAmp and gripforce strength"
+
+Call:
+lm(formula = new.data$V4 ~ new.data$V15)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-78.553 -36.437   9.153  30.354  63.412 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   35.6877     9.0493   3.944 0.000184 ***
+new.data$V15   0.3572     0.1220   2.928 0.004563 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 35.9 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.1064,	Adjusted R-squared:  0.094 
+F-statistic: 8.574 on 1 and 72 DF,  p-value: 0.004563
+
+[1] "rAmp and lateral pinch"
+
+Call:
+lm(formula = new.data$V4 ~ new.data$V16)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-66.701 -37.086   7.006  33.329  49.375 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   48.4679     6.4490   7.516 1.23e-10 ***
+new.data$V16   0.6287     0.2831   2.221   0.0295 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 36.74 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.06411,	Adjusted R-squared:  0.05111 
+F-statistic: 4.932 on 1 and 72 DF,  p-value: 0.02951
+
+[1] "Bulbar symptoms"
+[1] "Inexcitable cortex among bulbar subjects"
+  Bulbar x
+1      0 3
+2      1 5
+[1] "Cortical changes accompanying bulbar symptoms"
+[1] "Frequency of bulbar symptoms"
+  Bulbar x
+1      0 3
+2      1 5
+[1] "Bulbar symptoms versus ALSFRSr"
+
+	Welch Two Sample t-test
+
+data:  new.data$ALSFRSr by new.data$V24
+t = 3.1157, df = 35.348, p-value = 0.003631
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 1.739839 8.240161
+sample estimates:
+mean in group 0 mean in group 1 
+          41.24           36.25 
+
+[1] "Bulbar symptoms versus AALS"
+
+	Welch Two Sample t-test
+
+data:  new.data$AALS by new.data$V24
+t = -3.9386, df = 26.276, p-value = 0.0005405
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -28.779028  -9.047638
+sample estimates:
+mean in group 0 mean in group 1 
+       45.92000        64.83333 
+
+[1] "Bulbar symptoms versus CMAP"
+
+	Welch Two Sample t-test
+
+data:  new.data$V28 by new.data$V24
+t = 2.0399, df = 22.563, p-value = 0.05324
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.03225255  4.27791581
+sample estimates:
+mean in group 0 mean in group 1 
+       8.204082        6.081250 
+
+[1] "Bulbar symptoms versus MT"
+
+	Welch Two Sample t-test
+
+data:  new.data$V9 by new.data$V24
+t = -2.7583, df = 40.771, p-value = 0.008659
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -22.925241  -3.542708
+sample estimates:
+mean in group 0 mean in group 1 
+       67.80769        81.04167 
+
+[1] "Bulbar symptoms versus rAmp"
+
+	Welch Two Sample t-test
+
+data:  new.data$V4 by new.data$V24
+t = 2.1439, df = 34.692, p-value = 0.03913
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  1.139247 42.024214
+sample estimates:
+mean in group 0 mean in group 1 
+       66.69423        45.11250 
+
+[1] "Bulbar symptoms versus MEP"
+
+	Welch Two Sample t-test
+
+data:  new.data$V30 by new.data$V24
+t = 3.2508, df = 48.074, p-value = 0.002105
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.5585825 2.3696226
+sample estimates:
+mean in group 0 mean in group 1 
+       2.905769        1.441667 
+
+[1] "CMCT and rAmp"
+
+Call:
+lm(formula = new.data$V4 ~ new.data$V8)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-56.539 -10.724  -1.406  16.182  77.176 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   10.724      5.353   2.003   0.0488 *  
+new.data$V8  544.983     51.121  10.661   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 23.7 on 74 degrees of freedom
+Multiple R-squared:  0.6056,	Adjusted R-squared:  0.6003 
+F-statistic: 113.7 on 1 and 74 DF,  p-value: < 2.2e-16
+
+[1] "Motor threshold and rAmp"
+
+Call:
+lm(formula = new.data$V4 ~ new.data$V9)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-83.775 -14.623  -4.577  10.923  58.119 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 172.1663     9.6504   17.84   <2e-16 ***
+new.data$V9  -1.5598     0.1294  -12.05   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 21.93 on 74 degrees of freedom
+Multiple R-squared:  0.6625,	Adjusted R-squared:  0.6579 
+F-statistic: 145.3 on 1 and 74 DF,  p-value: < 2.2e-16
+
+[1] "Disease severity and neurophysiology"
+[1] "ALSFRSr versus rAmp"
+
+Call:
+lm(formula = new.data$ALSFRSr ~ new.data$V4)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.569  -3.047   1.335   3.436   9.869 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 35.13092    1.20812  29.079  < 2e-16 ***
+new.data$V4  0.07586    0.01724   4.399 3.69e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.557 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.2118,	Adjusted R-squared:  0.2009 
+F-statistic: 19.35 on 1 and 72 DF,  p-value: 3.694e-05
+
+[1] "AALS versus rAmp"
+
+Call:
+lm(formula = new.data$AALS ~ new.data$V4)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-24.006  -8.916  -3.341   6.133  60.546 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 61.84637    3.48967  17.723  < 2e-16 ***
+new.data$V4 -0.16541    0.04981  -3.321  0.00141 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.05 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.1328,	Adjusted R-squared:  0.1208 
+F-statistic: 11.03 on 1 and 72 DF,  p-value: 0.001412
+
+[1] "ALSFRSr versus CMCT"
+
+Call:
+lm(formula = new.data$ALSFRSr ~ new.data$V8)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-13.462  -2.619   1.104   3.756  10.126 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   34.874      1.254  27.806  < 2e-16 ***
+new.data$V8   53.083     12.023   4.415 3.49e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.553 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.213,	Adjusted R-squared:  0.2021 
+F-statistic: 19.49 on 1 and 72 DF,  p-value: 3.485e-05
+
+[1] "AALS versus CMCT"
+
+Call:
+lm(formula = new.data$AALS ~ new.data$V8)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-23.637  -7.658  -2.715   6.347  55.854 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   63.637      3.553  17.911  < 2e-16 ***
+new.data$V8 -129.512     34.060  -3.802 0.000297 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 15.73 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.1672,	Adjusted R-squared:  0.1557 
+F-statistic: 14.46 on 1 and 72 DF,  p-value: 0.0002975
+
+[1] "ALSFRSr versus MT"
+
+Call:
+lm(formula = new.data$ALSFRSr ~ new.data$V9)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.3914  -2.3914   0.9786   3.7944   8.9786 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  48.6366     2.5430  19.125  < 2e-16 ***
+new.data$V9  -0.1249     0.0340  -3.674 0.000456 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.745 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.1579,	Adjusted R-squared:  0.1462 
+F-statistic:  13.5 on 1 and 72 DF,  p-value: 0.0004562
+
+[1] "AALS versus MT"
+
+Call:
+lm(formula = new.data$AALS ~ new.data$V9)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-24.031  -9.544  -3.631   4.166  53.232 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 33.82150    7.29910   4.634 1.56e-05 ***
+new.data$V9  0.25261    0.09758   2.589   0.0116 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.49 on 72 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.08515,	Adjusted R-squared:  0.07245 
+F-statistic: 6.702 on 1 and 72 DF,  p-value: 0.01165
+
+[1] "TMS model for disease severity prediction using MLR"
+
+Call:
+lm(formula = tms.model, data = new.data, na.action = na.omit)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.748  -2.998   1.028   2.924  10.314 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 20.81945   14.21713   1.464    0.148
+V4           0.14831    0.09111   1.628    0.108
+V5          -0.11742    0.08995  -1.305    0.196
+V6          11.93704    8.53840   1.398    0.167
+V7          -0.50431   14.90126  -0.034    0.973
+V8          28.69687   20.46667   1.402    0.165
+V9           0.13729    0.14158   0.970    0.336
+
+Residual standard error: 5.505 on 67 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.2804,	Adjusted R-squared:  0.216 
+F-statistic: 4.351 on 6 and 67 DF,  p-value: 0.0009103
+

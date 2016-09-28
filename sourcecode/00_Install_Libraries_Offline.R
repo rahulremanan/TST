@@ -1,0 +1,1 @@
+install.packages("~/Library/...",... repos = NULL, type="source")

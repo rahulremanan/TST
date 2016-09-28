@@ -1,0 +1,79 @@
+
+Call:
+ randomForest(formula = pred.model, data = my.train, importance = TRUE,      ntree = 2000, na.action = na.omit) 
+               Type of random forest: regression
+                     Number of trees: 2000
+No. of variables tried at each split: 7
+
+          Mean of squared residuals: 4.289612
+                    % Var explained: 88.44
+                Length Class  Mode     
+call               6   -none- call     
+type               1   -none- character
+predicted         68   -none- numeric  
+mse             2000   -none- numeric  
+rsq             2000   -none- numeric  
+oob.times         68   -none- numeric  
+importance        42   -none- numeric  
+importanceSD      21   -none- numeric  
+localImportance    0   -none- NULL     
+proximity          0   -none- NULL     
+ntree              1   -none- numeric  
+mtry               1   -none- numeric  
+forest            11   -none- list     
+coefs              0   -none- NULL     
+y                 68   -none- numeric  
+test               0   -none- NULL     
+inbag              0   -none- NULL     
+terms              3   terms  call     
+
+Call:
+lm(formula = pred.model, data = my.train)
+
+Coefficients:
+(Intercept)           V1           V2           V3           V4           V5           V6           V7           V8           V9  
+  40.273892     0.045097     0.292138    -0.241011    -0.011279    -0.028666    -5.765550    13.145869    18.870172     0.066103  
+        V10          V11          V12          V13          V14          V15          V16          V17          V18          V19  
+   0.002637    45.308603     1.863356    25.034815   -13.868845     0.089266     0.009010     0.087920     0.022307    -0.785794  
+        V20          V21  
+  -0.220335    -0.179788  
+
+
+Call:
+lm(formula = pred.model, data = my.train)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.6564 -1.1413 -0.0086  1.3316  4.3752 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  40.273892  13.740469   2.931  0.00525 ** 
+V1            0.045097   0.038291   1.178  0.24496    
+V2            0.292138   0.106715   2.738  0.00877 ** 
+V3           -0.241011   0.150085  -1.606  0.11516    
+V4           -0.011279   0.044284  -0.255  0.80009    
+V5           -0.028666   0.042723  -0.671  0.50559    
+V6           -5.765550   4.846628  -1.190  0.24031    
+V7           13.145869   7.267777   1.809  0.07702 .  
+V8           18.870172  11.561291   1.632  0.10947    
+V9            0.066103   0.082950   0.797  0.42960    
+V10           0.002637   0.023382   0.113  0.91069    
+V11          45.308603  13.304591   3.405  0.00138 ** 
+V12           1.863356   2.589896   0.719  0.47549    
+V13          25.034815   7.651717   3.272  0.00203 ** 
+V14         -13.868845  12.483573  -1.111  0.27236    
+V15           0.089266   0.019142   4.663 2.69e-05 ***
+V16           0.009010   0.035656   0.253  0.80162    
+V17           0.087920   0.079195   1.110  0.27270    
+V18           0.022307   0.037582   0.594  0.55572    
+V19          -0.785794   0.244634  -3.212  0.00241 ** 
+V20          -0.220335   0.108750  -2.026  0.04858 *  
+V21          -0.179788   0.099037  -1.815  0.07599 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.259 on 46 degrees of freedom
+Multiple R-squared:  0.907,	Adjusted R-squared:  0.8646 
+F-statistic: 21.37 on 21 and 46 DF,  p-value: < 2.2e-16
+
