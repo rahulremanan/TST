@@ -1,5 +1,5 @@
 ﻿Transcranial magnetic stimulation data on 38 North American adults with a diagnosis of amyotrophic lateral scleorsis (ALS) collected between December 2010 and August 2016.
-Datasets are managed by Rahul Remanan (remananr@hss.edu).
+Datasets are managed by Rahul Remanan (rahul@remanan.net).
 
 Structure of the data frame: 76 obs. of  34 variables:
  $ No     : int  1 1 2 2 3 3 4 4 5 5 ...
