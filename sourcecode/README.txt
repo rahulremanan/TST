@@ -5,4 +5,4 @@
 All outputs are written to the default working directory.
 Use: getwd() to identify the working directory for R.
 
-NOTE: Outputs generated using the RdRAND library simultaneosuly with the Marsenne Twister pseudorandom generator is available upon request from Rahul Remanan (remananr@hss.edu).
+NOTE: Outputs generated using the RdRAND library simultaneosuly with the Marsenne Twister pseudorandom generator is available upon request from Rahul Remanan (rahul@remanan.net).
